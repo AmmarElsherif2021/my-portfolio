@@ -1,0 +1,41 @@
+.logo-container {
+  z-index: 0;
+  width: 660px;
+  height: 950px;
+  position: absolute;
+  top: 30%;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+}
+
+.logo-container svg {
+  width: 100%;
+  height: auto;
+  bottom: auto;
+  -webkit-transform: rotateZ(30deg) !important;
+          transform: rotateZ(30deg) !important;
+}
+
+.logo-container svg path {
+  fill: none;
+  stroke: #ffae00;
+  stroke-width: 8px;
+}
+
+.logo-container .solid-logo {
+  position: absolute;
+  top: auto;
+  right: auto;
+  bottom: auto;
+  left: 0;
+  margin: auto;
+  width: 102%;
+  height: auto;
+  opacity: 0;
+  -webkit-transform: rotateZ(30deg) !important;
+          transform: rotateZ(30deg) !important;
+  z-index: 1;
+}
+/*# sourceMappingURL=index.css.map */
