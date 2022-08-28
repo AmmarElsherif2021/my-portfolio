@@ -1,0 +1,87 @@
+.card{
+    position: absolute;
+      left: 10%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 40%;
+      max-height: 90%;
+      
+    .card-content{
+        display:flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        background: #022c43;
+        border:none;
+
+        h1{
+            font-size: 56px;
+            line-height: 53px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            margin: 20px;
+            color:#ffd700;
+        }
+        input{
+            padding: 3px;
+            margin: 0;
+            list-style: none;
+            margin-bottom: 10px;
+            opacity: 0;
+            overflow: hidden;
+            display: block;
+            clear: both;
+            position: relative;
+            animation: fadeInUp 1s 1s;
+            animation-fill-mode: forwards;
+            width:70%;
+            height:70px;
+            background: #115173;
+            border-radius: 3px;
+            font-size: 1.5rem;
+            color:antiquewhite;
+            font-weight:4;
+        &:nth-of-type(1){
+            animation-delay: 0.25s;
+        }
+        &:nth-of-type(2){
+            animation-delay: 0.5s;
+        }
+        &:nth-of-type(3){
+            animation-delay: 1s;
+        }
+        &:nth-of-type(4){
+            animation-delay: 1.5s;
+        }
+        &:nth-of-type(5){
+            animation-delay: 1.75s;
+        }
+    
+        }
+        
+    }
+    
+        .flat-button{
+            color: #ffd700;
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-decoration: none;
+            padding: 8px 10px;
+            border: 1px solid #ffd700;
+            float: left;
+            border-radius: 4px;
+            background: 0 0;
+            text-transform: uppercase;
+            float: right;
+            text-align: center;
+            margin-right: 10px;
+            cursor:pointer;
+            &:hover{
+                background: #ffd700;
+                color: #333;
+                transition: 0.2s ease-in-out 0.2s;
+            }
+        
+      }
+}

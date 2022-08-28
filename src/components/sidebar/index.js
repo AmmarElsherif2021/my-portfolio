@@ -28,7 +28,7 @@ const Sidebar=()=>(
          exact="true"
          activeclassname="active"
          className="about-link"
-         to="/"
+         to="/about"
        >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
        </NavLink>
@@ -36,7 +36,7 @@ const Sidebar=()=>(
          exact="true"
          activeclassname="active"
          className="contact-link"
-         to="/"
+         to="/contact"
        >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
        </NavLink>

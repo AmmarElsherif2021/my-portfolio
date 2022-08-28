@@ -13,7 +13,7 @@ const Home=()=>{
     let jobName='web developer';
     const jobArr=jobName.split('');
     useEffect(() => {
-        setTimeout(() => {
+      return setTimeout(() => {
           setLetterClass('text-animate-hover')
         }, 4000)
       }, [])
@@ -22,21 +22,30 @@ const Home=()=>{
     <div className="container home-page">
        <div className="text-zone" >
         <h1>
-         <span ><AnimatedLetters letterClass={letterClass} strArr={hiArr} index={0}/></span>
+         <span ><AnimatedLetters letterClass={letterClass} strArr={hiArr} idx={10}/></span>
        <br />
          <span><img
            src={LogoTitle}
            alt="JavaScript Developer Name, Web Developer Name"
         /></span>    
-         <span><AnimatedLetters letterClass={letterClass} strArr={nameArr} index={1}/></span>   
+         <span><AnimatedLetters letterClass={letterClass} strArr={nameArr} idx={13}/></span>   
        <br />
-       <AnimatedLetters letterClass={letterClass} strArr={jobArr} index={2}/>
+       <AnimatedLetters letterClass={letterClass} strArr={jobArr} idx={15}/>
        <br/>
        </h1>
       <h2>Front End Developer / JavaScript </h2>
+      
+      <span>
       <Link to="/contact" className="flat-button">
         CONTACT ME
       </Link>
+      </span>
+      <span>
+      <Link to="/signup" className="flat-button">
+        SIGN UP
+      </Link>
+      </span>
+      
        </div>
        <Logo/>
     </div>

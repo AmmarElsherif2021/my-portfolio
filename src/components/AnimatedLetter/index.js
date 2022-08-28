@@ -5,7 +5,7 @@ const AnimatedLetters=(props)=>{
          {
             props.strArr.map((char,i)=>(
                 <span key={char+i} 
-                      className={`${props.letterClass} _ ${i+props.index} `}>
+                      className={`${props.letterClass} _ ${i+props.idx} `}>
                       {char}
                 </span>
             ))

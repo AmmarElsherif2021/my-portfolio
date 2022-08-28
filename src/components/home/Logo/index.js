@@ -38,7 +38,7 @@ const Logo=()=>{
        <img className='solid-logo' src={LogoA} alt='a' ref={solidLogoRef}/>
        
        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
-       width="750pt" height="750pt" viewBox="230 875 605 598"  xml="preserve">
+       width="610pt" height="610pt" viewBox="225 870 610 610"  xml="preserve">
     
     <g
               
