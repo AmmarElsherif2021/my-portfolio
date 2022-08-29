@@ -1,4 +1,5 @@
 .home-page {
+  width:100%;
     .text-zone {
       position: absolute;
       left: 10%;
@@ -25,6 +26,7 @@
         margin-top: -40px;
         left: -15px;
         opacity: 0.6;
+
       }
   
       &:after {
@@ -41,16 +43,18 @@
   
       img {
         margin-left: 10px;
-        margin-right:10px;
+        margin-right:3px;
+        margin-bottom: -10px;
         opacity: 0;
-        width: 45px;
+        width: 50px;
         height: auto;
         animation: rotateIn 1s linear both;
         animation-delay: 1.4s;
+
       }
     }
     h2 {
-        color: #8d8d8d;
+        color: #ffd700;
         margin-top: 20px;
         font-weight: 400;
         font-size: 11px;
@@ -76,5 +80,12 @@
           background: #ffd700;
           color: #333;
         }
+      }
+      .logo{
+        position:absolute;
+        width:100px;
+        right:10%;
+        top:7%;
+        background: rgb(14, 190, 7);
       }
 }

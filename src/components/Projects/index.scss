@@ -1,0 +1,27 @@
+.projects-container{
+    position: absolute;
+    left:45%;
+    top:10%;
+    width:50%;
+    height:80%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction:column;
+    gap: 20px;
+    
+   
+    overflow-x: auto;
+    
+    .card-item{
+        width: 80%;
+        height:30%;
+        font-size: 12px;
+        flex: 0 0 auto;         
+        display: flex;          
+        flex-direction: column; 
+        position: relative;
+        align-self: center;
+        justify-content: center;
+    }
+    
+}

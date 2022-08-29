@@ -19,7 +19,7 @@ const Home=()=>{
       }, [])
       
     return (
-    <div className="container home-page">
+    <div className=" home-page">
        <div className="text-zone" >
         <h1>
          <span ><AnimatedLetters letterClass={letterClass} strArr={hiArr} idx={10}/></span>
@@ -45,9 +45,17 @@ const Home=()=>{
         SIGN UP
       </Link>
       </span>
+      <span>
+      <Link to="/projects" className="flat-button">
+       Explore my projects 
+      </Link>
+      </span>
       
        </div>
-       <Logo/>
+       <div className='logo'>
+         <Logo/>
+       </div>
+       
     </div>
     )
 }

@@ -6,6 +6,7 @@
   top: 0;
   z-index: 3;
   min-height: 500px;
+  
 
   .logo {
     display: block;
@@ -14,7 +15,7 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 24px;
+      width: 45px;
       height: auto;
 
       &.sub-logo {
@@ -31,6 +32,8 @@
     top: 50%;
     margin-top: -120px;
     width: 100%;
+    font-family:  monospace;
+    font-size: 30px;
 
     a {
       font-size: 22px;

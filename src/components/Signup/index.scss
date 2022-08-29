@@ -11,7 +11,7 @@
         flex-direction: column;
         justify-content:space-around;
         align-items: center;
-        background: #022c43;
+        background: #000000;
         border:none;
 
         h1{
@@ -37,7 +37,7 @@
             animation-fill-mode: forwards;
             width:70%;
             height:70px;
-            background: #115173;
+            background: #484848;
             border-radius: 3px;
             font-size: 1.5rem;
             color:antiquewhite;
@@ -67,7 +67,7 @@
             font-size: 11px;
             letter-spacing: 3px;
             text-decoration: none;
-            padding: 8px 10px;
+            padding: 8px 18px;
             border: 1px solid #ffd700;
             float: left;
             border-radius: 4px;
@@ -76,6 +76,7 @@
             float: right;
             text-align: center;
             margin-right: 10px;
+            margin-top:10px;
             cursor:pointer;
             &:hover{
                 background: #ffd700;
