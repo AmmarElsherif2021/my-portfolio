@@ -2,7 +2,8 @@ export default [
     {
         id: 1,
         title: "Memes Generator",
-        // description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+         description: "This is a meme generator app that is built with React",
+         path:'/meme-gen'
         // price: 136,
         // coverImg: "katie-zaferes.png",
         // stats: {
@@ -15,7 +16,8 @@ export default [
     {
         id: 2,
         title: "Note Application",
-        // description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "This is a note app i 've built using React",
+        path:'/note-app'
         // price: 136,
         // coverImg: "katie-zaferes.png",
         // stats: {
@@ -28,7 +30,8 @@ export default [
     {
         id: 3,
         title: "Dummy Tenzies Game",
-        // description: "I will share with you what I call \"Positively Impactful Moments of Disappointment.\" Throughout my career, many of my highest moments only came after setbacks and losses. But learning from those difficult moments is what gave me the ability to rise above them and reach my goals.",
+        description: "This is a dummy tenzie game app i created using React",
+        path: '/tenzies'
         // price: 136,
         // coverImg: "katie-zaferes.png",
         // stats: {
