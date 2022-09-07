@@ -1,27 +1,98 @@
-.projects-container{
-    position: absolute;
-    left:45%;
-    top:10%;
-    width:50%;
-    height:80%;
-    display: flex;
-    flex-wrap: nowrap;
-    flex-direction:column;
-    gap: 20px;
-    
-   
-    overflow-x: auto;
-    
-    .card-item{
-        width: 80%;
-        height:30%;
-        font-size: 12px;
-        flex: 0 0 auto;         
-        display: flex;          
-        flex-direction: column; 
-        position: relative;
-        align-self: center;
-        justify-content: center;
+.container{
+    .text-container{
+        position: absolute;
+        left: 10%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 40%;
+        max-height: 90%;
+        h1 {
+            font-size: 56px;
+            line-height: 53px;
+            margin: 0;
+            font-family: 'Coolvetica';
+            font-weight: 400;
+            color: #ffd700;
+        
+            &:before {
+              content: '<h1>';
+              font-family: 'La Belle Aurore', cursive;
+              color: #ffd700;
+              font-size: 18px;
+              position: absolute;
+              margin-top: -40px;
+              left: -15px;
+              opacity: 0.6;
+            }
+        
+            &:after {
+              content: '<h1/>';
+              font-family:  'La Belle Aurore', cursive;
+              color: #ffd700;
+              font-size: 18px;
+              position: absolute;
+              margin-top: 18px;
+              margin-left: 20px;
+              animation: fadeIn 1s 1.7s backwards;
+              opacity: 0.6;
+            }
+            
+            
+          }
+        
+          p{
+              font-style: 13px;
+              color:aliceblue;
+              font-family:sans-serif;
+              font-weight:300;
+              min-width: fit-content;
+              animation:pulse 1s;
+              
+          }
+        
+          .text-animate-hover {
+            
+              &:hover {
+                
+                color: #ffffff;
+              }
+            }
+    }
+    .projects-container{
+        position: absolute;
+        left:45%;
+        top:10%;
+        width:50%;
+        height:80%;
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction:column;
+        gap: 20px;
+        
+       
+        overflow-x: auto;
+        
+        .card-item{
+            width: 65%;
+            height:40%;
+            font-size: 12px;
+            flex: 0 0 auto;         
+            display: flex;          
+            flex-direction: column; 
+            position: relative;
+            align-self: center;
+            justify-content: center;
+            overflow-x: hidden;
+            &:nth-of-type(1){
+                background: #119196;
+            }
+            &:nth-of-type(2){
+                background: #ffffff;
+            }
+            
+            
+        }
+        
     }
     
 }

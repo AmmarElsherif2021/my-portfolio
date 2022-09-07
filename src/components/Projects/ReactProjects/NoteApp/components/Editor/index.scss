@@ -1,0 +1,26 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Karla', sans-serif;
+}
+
+// button:focus {
+//     outline: none;
+//   }
+// .ql-editor p,
+// .ql-editor.ql-blank::before {
+//     font-size: 1.3em;
+//     font-weight: 100;
+// } 
+
+
+.editor{
+    position: absolute;
+    top:10%;
+    left:20%;
+    height:50%;
+    border: solid 2px yellow;
+    border-radius: 1em;
+    overflow: hidden; 
+     
+
+}

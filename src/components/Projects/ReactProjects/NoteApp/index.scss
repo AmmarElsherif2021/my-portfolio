@@ -1,5 +1,55 @@
-.projh1{
-    font-size: 100px;
-    background: red;
-    color:antiquewhite;
-}
+* {
+    box-sizing: border-box;
+  }
+  .note-app{
+    position:absolute;
+    left:25%;
+    top:10%;
+    width:70%;
+    height:70%;
+    
+    
+    border:solid 3px yellow;
+    border-radius: 1.5em;
+    margin:2em;
+    
+      
+      .split {
+        position: relative;
+        display: flex; 
+         
+        
+        .gutter {
+            background-color: #eee;
+            background-repeat: no-repeat;
+            background-position: 50%;
+          
+            .gutter-horizontal {
+              background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+          
+              &:hover {
+                cursor: col-resize;
+              }
+            }
+          }     
+      }
+      
+      .no-notes {
+         background:#0000;
+         width:80%;
+         height:80%;
+         position: absolute;
+         left:10%;
+         top:0;
+         h1{
+          font-family: 'Coolvetica';
+          font-weight:100;
+        } 
+         .first-note{
+            
+         }
+   
+    
+      }
+  }
+  
