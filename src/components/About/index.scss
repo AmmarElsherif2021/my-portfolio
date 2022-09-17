@@ -59,9 +59,172 @@
         }
       }
       
+      .wheel-container{
+        position:absolute;
+        left:45%;
+        top:3%;
+        // background: #c77060;
+        width:50%;
+        height:100%;
+
+        .path-container{
+          
+          height:35%;
+          position:absolute;
+          transform: rotate(32deg);
+          top:-15em;
+          left:-5em;
+          .svg{
+           
+            // background: #008cff;
+            position:absolute;
+            opacity:0;
+            
+            &:nth-of-type(1){
+                    // background: #ffffff;
+                    left: 17em;
+                    top:0.7em;
+                    transform: rotate(10deg);
+                }
+            &:nth-of-type(2){
+                        // background: #997a7a;
+                        left: 19em;
+                        top:8em;
+                        transform: rotate(50deg);
+                    }
+            &:nth-of-type(3){
+                      //background: #119653;  
+                      left: 10.5em;
+                      top:-3em;
+                      transform: rotate(-30deg);        
+
+          }
+            &:nth-of-type(4){
+            //background: #119653;  
+             left: 3.7em;
+             top:-1.3em;
+             transform: rotate(-70deg);        
+
+}
+        }
+          // .svg2{
+          //   // background: #02c2b2;
+          //   position:absolute;
+          //   left: 18em;
+          //   top:3.5em;
+          //   transform: rotate(10deg)
+          // }
+          
+          
+      }
+
+        .wheel{
+          position: absolute;
+          top: 5%;
+          left: 5%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 90%;
+          height: 90%;
+          // max-width: 2000px;
+          // max-height: 2000px;
+        
+          
+           
+          
+          .wheel-card{
+            position: absolute;
+            
+            width: 10px;
+            height: 10px;
+            margin:5%;
+            border-radius: 50%;
+            justify-content: center;
+            align-items: center;
+            animation:3s linear 1s ;
+            // max-width: 200px;
+            // aspect-ratio: 1 / 1;
+            cursor: pointer;
+            box-shadow:0px 0px 15px 3px #ffd700 ;
+
+            .iconImg{
+              box-sizing: border-box;
+              overflow: hidden;
+              max-width:65px;
+              position: absolute;
+              top:15%;
+              left:18%;
+              bottom:15%;
+              // opacity:0;
+              border-radius: 30%;
+              -webkit-animation:appear 8s ease 0s 1 normal;
+              -moz-animation:appear 8s ease 0s 1 normal;
+              -ms-animation:appear 8s ease 0s 1 normal;
+              animation:appear 8s ease 0s 1 normal;
+              @-webkit-keyframes appear {
+                0%{ opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3); }
+                60%{ opacity: 1; -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
+                }
+                @keyframes appear { 
+                0%{ opacity: 0; transform: scale3d(0.3, 0.3, 0.3); }
+                60%{ opacity: 1; transform: scale3d(1,1,1); }
+                }
+                
+             
+            }
+
+
+
+
+
+
+            &:nth-of-type(1){
+              left:30%;
+              top:45%;
+              background: #ffd700;
+              opacity:0;
+           }
+            &:nth-of-type(2){
+            left:30%;
+            top:49%;
+            background: #ffd700;
+            opacity:0;
+           }
+            &:nth-of-type(3){
+          left:30%;
+          top:50%;
+          background: #ffd700;
+          opacity:0;
+      }
+      &:nth-of-type(4){
+        left:30%;
+        top:50%;
+        background: #ffd700;
+        opacity:0;
+    }
+        
+      
+           h3{
+            position:absolute;
+            left:45%;
+            top:20%;
+            // background: #ffd700;
+           }
+          }
+          .ball-swim{
+            -webkit-animation:shake 300s cubic-bezier(0.60,1,0.70,0) 0s 1 normal;
+            -moz-animation:shake 300s cubic-bezier(0.60,1,0.70,0) 0s 1 normal;
+            -ms-animation:shake 300s cubic-bezier(0.60,1,0.70,0) 0s 1 normal;
+            animation:shake 300s cubic-bezier(0.60,1,0.70,0) 0s 1 normal;
+
+          }
+        }
+        
+      }
   }
   
-
+  
   
   
   // @media screen and (max-width: 1200px) {

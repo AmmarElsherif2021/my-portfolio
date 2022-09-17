@@ -10,7 +10,7 @@
   }
   
   .tags {
-    color: #ffd700;
+    color: #686868;
     opacity: 0.8;
     position: absolute;
     bottom: 0;
@@ -18,7 +18,10 @@
     font-size: 18px;
     font-family: 'La Belle Aurore', cursive;
   }
-  
+  .bottom-tags{
+    bottom:15px;
+    top:auto;
+  }
   .bottom-tag-html {
     margin-left: -20px;
   }
@@ -50,12 +53,12 @@
         margin-top: 0;
         position: relative;
         margin-bottom: 40px;
-        left: -10px;
+        left: 0px;
   
         &:before {
           content: '<h1>';
           font-family: 'La Belle Aurore', cursive;
-          color: #ffd700;
+          color: #686868;
           font-size: 18px;
           position: absolute;
           margin-top: -10px;
@@ -67,7 +70,7 @@
         &:after {
           content: '<h1/>';
           font-family: 'La Belle Aurore', cursive;
-          color: #ffd700;
+          color: #686868;
           font-size: 18px;
           line-height: 18px;
           position: absolute;

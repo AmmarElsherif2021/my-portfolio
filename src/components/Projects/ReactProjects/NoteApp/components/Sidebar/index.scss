@@ -1,125 +1,142 @@
 .sidebar {
-	width: 20%;
-	height: 100vh;
-  }
-  
-  .sidebar--note {
-	/* display: flex; */
-  }
-  
-  .sidebar--header {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-  
-	> h3 {
-	  font-size: 1.75rem;
-	}
-  }
-  
-  .new-note {
-	cursor: pointer;
-	background-color: rgb(255, 174, 0);
-	border: none;
-	color: white;
-	border-radius: 3px;
-	height: 30px;
-	width: 30px;
-	margin-bottom: 5%;
-  }
-  
-  .first-note {
-	cursor: pointer;
-	background-color: rgb(255, 174, 0);
-	border: none;
-	color: white;
-	border-radius: 3px;
-	padding: 1rem;
-  }
-  
-  .editor {
-	width: 79%;
-	height: 150vh;
-  }
-  
-  .title {
-	overflow: hidden;
-	width: 100%;
-	cursor: pointer;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-  }
-  
-  .title--delete {
-	cursor: pointer;
-	background-color: rgb(255, 174, 0);
-	border: none;
-	color: white;
-	border-radius: 3px;
-	height: 30px;
-	width: 30px;
-	margin-bottom: 5%;
-  }
-  
-  .title:hover .title--delete {
-	display: block;
-  }
-  
-  .note-summary:not(:last-of-type) {
-	border-bottom: 1px solid lightgray;
-  }
-  
-  .text-snippet {
-	padding-inline: 5px;
-	font-size: 0.8rem;
-	font-weight: 400;
-	line-height: 1.2rem;
-	color: rgb(255, 174, 0);
-	white-space: nowrap;
-	overflow: hidden;
-	text-overflow: ellipsis;
-  }
-  
-  .selected-note {
-	background-color: rgb(255, 174, 0);
-  
-	.text-snippet {
-	  color: white;
-	  font-weight: 700;
-	}
-  }
-  
-  .gutter {
-	background-color: #eee;
-	background-repeat: no-repeat;
-	background-position: 50%;
-  
-	&.gutter-horizontal {
-	  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
-  
-	  &:hover {
-		cursor: col-resize;
+	position:absolute;
+	margin-top:-12vh;
+	margin-left:-27vw;
+	width: 50%;
+	height: 70vh;
+	// background:blue;
+	left:0;
+	border-right: 5px solid rgb(255, 196, 0);
+	.sidebar-note {
+		/* display: flex; */
 	  }
-	}
+	  
+	.sidebar-header {
+		position: absolute;
+		left:0;
+		top:0;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		// background: rgb(146, 18, 18);
+		width:160px;
+	    height:60px;
+		h3 {
+		  font-size: 1.75rem;
+		}
+		.new-note {
+			cursor: pointer;
+			background-color: rgb(255, 174, 0);
+			border: none;
+			color: white;
+			border-radius: 3px;
+			height: 30px;
+			width: 30px;
+			margin-bottom: 5%;
+		  }
+	  }
+	  
+	  .note-elements{
+		position:absolute;
+		height:190px;
+        top:50px;
+	  }
+	  
+	  .first-note {
+		cursor: pointer;
+		background-color: rgb(255, 174, 0);
+		border: none;
+		color: white;
+		border-radius: 3px;
+		padding: 1rem;
+	  }
+	  
+	  .editor {
+		width: 79%;
+		height: 150vh;
+	  }
+	  
+	  .title {
+		overflow: hidden;
+		width: 100%;
+		cursor: pointer;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	  }
+	  
+	  .title--delete {
+		cursor: pointer;
+		background-color: rgb(255, 174, 0);
+		border: none;
+		color: white;
+		border-radius: 3px;
+		height: 30px;
+		width: 30px;
+		margin-bottom: 5%;
+	  }
+	  
+	  .title:hover .title--delete {
+		display: block;
+	  }
+	  
+	  .note-summary:not(:last-of-type) {
+		border-bottom: 1px solid lightgray;
+	  }
+	  
+	  .text-snippet {
+		padding-inline: 5px;
+		font-size: 0.8rem;
+		font-weight: 400;
+		line-height: 1.2rem;
+		color: rgb(255, 174, 0);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	  }
+	  
+	  .selected-note {
+		background-color: rgb(255, 174, 0);
+	  
+		.text-snippet {
+		  color: white;
+		  font-weight: 700;
+		}
+	  }
+	  
+	  .gutter {
+		background-color: #eee;
+		background-repeat: no-repeat;
+		background-position: 50%;
+	  
+		&.gutter-horizontal {
+		  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAeCAYAAADkftS9AAAAIklEQVQoU2M4c+bMfxAGAgYYmwGrIIiDjrELjpo5aiZeMwF+yNnOs5KSvgAAAABJRU5ErkJggg==');
+	  
+		  &:hover {
+			cursor: col-resize;
+		  }
+		}
+	  }
+	  
+	  .split {
+		display: flex;
+		.pane {
+			overflow-y: auto; 
+			padding: 10px; 
+			
+			
+		 }
+	  }
+	  
+	  .no-notes {
+		width: 100%;
+		height: 100vh;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		background-color: whitesmoke;
+	  }
   }
   
-  .split {
-	display: flex;
-	.pane {
-		overflow-y: auto; 
-		padding: 10px; 
-		
-		
-	 }
-  }
   
-  .no-notes {
-	width: 100%;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	background-color: whitesmoke;
-  }

@@ -7,8 +7,8 @@ import { faEnvelope, faHome , faUser } from '@fortawesome/free-solid-svg-icons'
 import {
   faLinkedin,
   faGithub,
-  faYoutube,
-  faSkype,
+  faTwitter,
+  
 } from '@fortawesome/free-brands-svg-icons'
 const Sidebar=()=>(
     <div className='nav-bar'>
@@ -44,7 +44,7 @@ const Sidebar=()=>(
       <ul>
         <li>
           <a
-            href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/"
+            href="https://www.linkedin.com/in/ammar-alshareef-6a085212a/"
             target="_blank"
             rel="noreferrer"
           >
@@ -53,7 +53,7 @@ const Sidebar=()=>(
         </li>
         <li>
           <a
-            href="https://github.com/bobangajicsm"
+            href="https://github.com/AmmarElsherif2021"
             target="_blank"
             rel="noreferrer"
           >
@@ -62,18 +62,14 @@ const Sidebar=()=>(
         </li>
         <li>
           <a
-            href="https://www.youtube.com/channel/UCBu5ulO4d-d47lAVybpRTkw"
+            href="https://twitter.com/cartoonammar"
             rel="noreferrer"
             target="_blank"
           >
-            <FontAwesomeIcon icon={faYoutube} color="#4d4d4e" />
+            <FontAwesomeIcon icon={faTwitter} color="#4d4d4e" />
           </a>
         </li>
-        <li>
-          <a href="skype:live:bobangajicsm" rel="noreferrer" target="_blank">
-            <FontAwesomeIcon icon={faSkype} color="#4d4d4e" />
-          </a>
-        </li>
+        
       </ul>
     </div>)
 export default Sidebar

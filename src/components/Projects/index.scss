@@ -17,7 +17,7 @@
             &:before {
               content: '<h1>';
               font-family: 'La Belle Aurore', cursive;
-              color: #ffd700;
+              color:#686868;
               font-size: 18px;
               position: absolute;
               margin-top: -40px;
@@ -26,13 +26,13 @@
             }
         
             &:after {
-              content: '<h1/>';
+              content: '</h1>';
               font-family:  'La Belle Aurore', cursive;
-              color: #ffd700;
+              color: #686868;
               font-size: 18px;
               position: absolute;
-              margin-top: 18px;
-              margin-left: 20px;
+              margin-top: 40px;
+              left: -15px;
               animation: fadeIn 1s 1.7s backwards;
               opacity: 0.6;
             }
@@ -40,7 +40,7 @@
             
           }
         
-          p{
+          p{  margin-top:40px;
               font-style: 13px;
               color:aliceblue;
               font-family:sans-serif;
@@ -70,7 +70,26 @@
         gap: 20px;
         
        
-        overflow-x: auto;
+        overflow-y: auto;
+
+       &::-webkit-scrollbar {
+          width: 14px;               /* width of the entire scrollbar */
+        }
+        
+       &::-webkit-scrollbar-track {
+          background: orange;        /* color of the tracking area */
+        }
+        
+       &::-webkit-scrollbar-thumb {
+          background-color: rgb(50, 204, 243);    /* color of the scroll thumb */
+          border-radius: 20px;       /* roundness of the scroll thumb */
+          border: 2px solid black;  /* creates padding around scroll thumb */
+          
+        }
+
+
+
+       
         
         .card-item{
             width: 65%;
@@ -84,11 +103,14 @@
             justify-content: center;
             overflow-x: hidden;
             &:nth-of-type(1){
-                background: #119196;
+                background: #118d96;
             }
             &:nth-of-type(2){
                 background: #ffffff;
             }
+            &:nth-of-type(3){
+              background: #119653;
+          }
             
             
         }

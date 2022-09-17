@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom'
 import LogoTitle from '../../assets/images/logo-s.png'
 import AnimatedLetters from '../AnimatedLetter'
 import Logo from './Logo'
+// import Loader from 'react-loaders'
 const Home=()=>{
     const [letterClass,setLetterClass]= useState('text-animate');
     let hi=`Hi I'am`
@@ -41,9 +42,7 @@ const Home=()=>{
       </Link>
       </span>
       <span>
-      <Link to="/signup" className="flat-button">
-        SIGN UP
-      </Link>
+     
       </span>
       <span>
       <Link to="/projects" className="flat-button">
@@ -55,7 +54,7 @@ const Home=()=>{
        <div className='logo'>
          <Logo/>
        </div>
-       
+      
     </div>
     )
 }

@@ -1,11 +1,11 @@
 
 import './App.scss'
-import {Route,Routes} from 'react-router-dom'
+import {Route,Routes,Link} from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/home'
 import About from './components/About'
 import Contact from './components/Contact'
-import Signup from './components/Signup'
+//import Signup from './components/Signup'
 import ProjectsPreview from './components/Projects'
 
 
@@ -21,7 +21,7 @@ function App() {
        <Route index element={<Home/>}/>
        <Route path="/about"  element= { <About/> }></Route>
        <Route path="/contact"  element= { <Contact/> }></Route>
-       <Route path="/signup"  element= { <Signup/> }></Route>
+        
        <Route path="/projects"  element= { <ProjectsPreview/> }></Route>
        <Route path="/meme-gen"  element= { <MemeGen/> }> </Route>
           <Route path="/note-app"  element= { <NoteApp/> }></Route>
