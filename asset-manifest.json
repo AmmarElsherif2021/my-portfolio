@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/AmmarElsherif2021/my-portfolio/static/css/main.93e05c1b.css",
-    "main.js": "/AmmarElsherif2021/my-portfolio/static/js/main.9074cc83.js",
-    "static/js/988.f9d92b26.chunk.js": "/AmmarElsherif2021/my-portfolio/static/js/988.f9d92b26.chunk.js",
-    "static/media/logo4.png": "/AmmarElsherif2021/my-portfolio/static/media/logo4.c575313c766b06a1f846.png",
-    "static/media/logo-s.png": "/AmmarElsherif2021/my-portfolio/static/media/logo-s.da7655c80a2ec3273549.png",
-    "static/media/note.png": "/AmmarElsherif2021/my-portfolio/static/media/note.5826bd0da3141d15a9e9.png",
-    "static/media/c.jpg": "/AmmarElsherif2021/my-portfolio/static/media/c.e63f0afcad8fffad4dd7.jpg",
-    "static/media/helvetica-neu.ttf": "/AmmarElsherif2021/my-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
-    "static/media/jsIcon.png": "/AmmarElsherif2021/my-portfolio/static/media/jsIcon.2bd1c1d7fdd0e10e11e3.png",
-    "static/media/java.jpg": "/AmmarElsherif2021/my-portfolio/static/media/java.4d25b183e34ba983a0fb.jpg",
-    "static/media/LaBelleAurore.woff": "/AmmarElsherif2021/my-portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
-    "static/media/LaBelleAurore.woff2": "/AmmarElsherif2021/my-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
-    "static/media/ReactIcon.png": "/AmmarElsherif2021/my-portfolio/static/media/ReactIcon.0930eda6bdb82bbd80e4.png",
-    "static/media/CoolveticaRg-Regular.woff": "/AmmarElsherif2021/my-portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
-    "static/media/CoolveticaRg-Regular.woff2": "/AmmarElsherif2021/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
-    "index.html": "/AmmarElsherif2021/my-portfolio/index.html",
-    "main.93e05c1b.css.map": "/AmmarElsherif2021/my-portfolio/static/css/main.93e05c1b.css.map",
-    "main.9074cc83.js.map": "/AmmarElsherif2021/my-portfolio/static/js/main.9074cc83.js.map",
-    "988.f9d92b26.chunk.js.map": "/AmmarElsherif2021/my-portfolio/static/js/988.f9d92b26.chunk.js.map"
+    "main.css": "/my-portfolio/static/css/main.661e7afb.css",
+    "main.js": "/my-portfolio/static/js/main.7b6f074d.js",
+    "static/js/988.f9d92b26.chunk.js": "/my-portfolio/static/js/988.f9d92b26.chunk.js",
+    "static/media/logo4.png": "/my-portfolio/static/media/logo4.c575313c766b06a1f846.png",
+    "static/media/logo-s.png": "/my-portfolio/static/media/logo-s.da7655c80a2ec3273549.png",
+    "static/media/note.png": "/my-portfolio/static/media/note.5826bd0da3141d15a9e9.png",
+    "static/media/c.jpg": "/my-portfolio/static/media/c.e63f0afcad8fffad4dd7.jpg",
+    "static/media/helvetica-neu.ttf": "/my-portfolio/static/media/helvetica-neu.8a19678078a6b21c8057.ttf",
+    "static/media/jsIcon.png": "/my-portfolio/static/media/jsIcon.2bd1c1d7fdd0e10e11e3.png",
+    "static/media/java.jpg": "/my-portfolio/static/media/java.4d25b183e34ba983a0fb.jpg",
+    "static/media/LaBelleAurore.woff": "/my-portfolio/static/media/LaBelleAurore.9c5433c64baa43d1d274.woff",
+    "static/media/LaBelleAurore.woff2": "/my-portfolio/static/media/LaBelleAurore.a83c1c58fd7e43972e4a.woff2",
+    "static/media/ReactIcon.png": "/my-portfolio/static/media/ReactIcon.0930eda6bdb82bbd80e4.png",
+    "static/media/CoolveticaRg-Regular.woff": "/my-portfolio/static/media/CoolveticaRg-Regular.8307bfa187bccdc55f4d.woff",
+    "static/media/CoolveticaRg-Regular.woff2": "/my-portfolio/static/media/CoolveticaRg-Regular.7d1f3b1dd46ad6557a17.woff2",
+    "index.html": "/my-portfolio/index.html",
+    "main.661e7afb.css.map": "/my-portfolio/static/css/main.661e7afb.css.map",
+    "main.7b6f074d.js.map": "/my-portfolio/static/js/main.7b6f074d.js.map",
+    "988.f9d92b26.chunk.js.map": "/my-portfolio/static/js/988.f9d92b26.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.93e05c1b.css",
-    "static/js/main.9074cc83.js"
+    "static/css/main.661e7afb.css",
+    "static/js/main.7b6f074d.js"
   ]
 }
