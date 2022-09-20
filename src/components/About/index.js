@@ -1,8 +1,8 @@
 import {useState,useEffect,useRef} from 'react'
 import AnimatedLetters from '../AnimatedLetter'
 import './index.scss'
-import gsap from 'gsap-trial'
-import {MotionPathPlugin} from "gsap/MotionPathPlugin"; 
+import { motion } from "framer-motion"
+
 import JsIcon from './imgs/jsIcon.png'
 import ReactIcon from './imgs/ReactIcon.png'
 import JavaIcon from './imgs/java.jpg'
@@ -21,119 +21,87 @@ const About=()=>{
       }, [])
 
       const[ballClass,setBallClass]=useState('wheel-card');
-      //wheel GSAP code:
-      gsap.registerPlugin(MotionPathPlugin);
-      const boxRef = useRef();
-      useEffect(() => {
+      //wheel Motion code:
 
-        gsap.to("#ball1", {
-     
-                    duration: 2.5,
-                    repeat: 0,            
-                    repeatDelay: 0,
-                    yoyo: false,
-                    ease: "power1.in",
-                    width:100,
-                    height:100,
-                    opacity:1,
-                    
-                    motionPath:{
-                        path: "#path1",
-                        align: "#path1",
-                        autoRotate: false,
-                        alignOrigin: [0.5, 0.5],
-                        start:1,
-                        end:0.7,
-
-                    }
-     
-        });
       
-        
-     }, []);   
-     useEffect(
-      ()=>{
-        gsap.to("#ball2", {
-                    duration: 2.3,
-                    repeat: 0,            
-                    repeatDelay: 0,
-                    yoyo: false,
-                    ease: "power1.in",
-                    width:100,
-                    height:100,
-                    opacity:1,
-                    
-                    motionPath:{
-                        path: "#path2",
-                        align: "#path2",
-                        autoRotate: false,
-                        alignOrigin: [0.5, 0.5],
-                        start:1,
-                        end:0.7, 
-                    }
-          
-      });
-     
-      }
-      ,[])
-      useEffect(
-        ()=>{
-          gsap.to("#ball3", {
-                      duration: 2.7,
-                      repeat: 0,            
-                      repeatDelay: 0,
-                      yoyo: false,
-                      ease: "power1.in",
-                      width:100,
-                      height:100,
-                      opacity:1,
-                      
-                      motionPath:{
-                          path: "#path3",
-                          align: "#path3",
-                          autoRotate: false,
-                          alignOrigin: [0.5, 0.5],
-                          start:1,
-                          end:0.69, 
-                      }
-            
-        });
-       
-        }
-        ,[])
-
-        useEffect(
-          ()=>{
-            gsap.to("#ball4", {
-                        duration: 2.9,
-                        repeat: 0,            
-                        repeatDelay: 0,
-                        yoyo: false,
-                        ease: "power1.in",
-                        width:100,
-                        height:100,
-                        opacity:1,
-                        
-                        motionPath:{
-                            path: "#path4",
-                            align: "#path4",
-                            autoRotate: false,
-                            alignOrigin: [0.5, 0.5],
-                            start:1,
-                            end:0.67, 
-                        }
-              
-          });
-         
-          }
-          ,[])
     
-          useEffect(() => {
-            return setTimeout(() => {
-               setBallClass('wheel-card ball-swim')
-             }, 1000)
-           },[])
-          const iconArr=[0,JsIcon,ReactIcon,JavaIcon,CIcon];
+  
+     
+    //                 duration: 2.5,
+    //                 repeat: 0,            
+    //                 repeatDelay: 0,
+    //                 yoyo: false,
+    //                 ease: "power1.in",
+    //                 width:100,
+    //                 height:100,
+    //                 opacity:1,
+                    
+    //                 motionPath:{
+    //                     path: "#path1",
+    //                     align: "#path1",
+    //                     autoRotate: false,
+    //                     alignOrigin: [0.5, 0.5],
+    //                     start:1,
+    //                     end:0.7,
+
+  
+    useEffect(() => {
+      return setTimeout(() => {
+         setBallClass('wheel-card ball-swim')
+       }, 1000)
+     },[])
+     
+     
+          const transition = { duration: 4, yoyo: false, ease: "easeInOut"}
+          
+        
+
+          const pathsId=[];
+          for(let i=1;i<5;i++){
+             pathsId.push(`path${i}`);
+          }
+          const paths=pathsId.map((x)=>{
+            return(
+              <svg className='svg' height="400" version="1.1" width="470" xmlns="http://www.w3.org/2000/svg">
+                <motion.path 
+                id={x} 
+                fill="none" 
+                stroke="#eeeeee" 
+                d="M1037,287S285,46,89,365" 
+                
+                opacity="1" 
+               
+                strokeWidth="5"
+                
+                strokeLinecap="round"
+                initial={{ pathLength: 1 }}
+                animate={{ pathLength: 1 }}
+                transition={transition}
+                />
+                </svg>
+            )
+          });
+          
+          let iconArr=[
+            {id:'wheel1',src:JsIcon},
+            {id:'wheel2',src:ReactIcon},
+            {id:'wheel3',src:JavaIcon},
+            {id:'wheel4',src:CIcon}];
+
+          const Icons=iconArr.map((icon,i)=>{
+            return(
+              <motion.div id={icon.id} 
+                          className={ballClass}
+                          initial={{ x:'-267px' ,y:'-60px', scale: 1 }}
+                            animate={{x: `${200*Math.sin(i*45)}px`,y:`${200*Math.cos(i*-45)}px`, scale:4 }}
+                            transition={{ duration: 1+i, yoyo: false, ease: "easeInOut"}}
+                            ><img className='iconImg' src={icon.src}/></motion.div>
+            )
+           })
+          ;
+          // {<div 
+          //   id={x.id} className={ballClass} ><img className='iconImg' src={x.src}/></div>}
+          //initial={{ offsetDistance: "100%", scale: 2.5 }}
     return(
     
         <div className='container about-page'>
@@ -154,50 +122,21 @@ const About=()=>{
 
            <div className='wheel-container'>
             <div className='path-container'>
+              
             
-            <svg className='svg' height="400" version="1.1" width="470" xmlns="http://www.w3.org/2000/svg">
-            <path id="path1" fill="none" stroke="#eeeeee" d="M1037,287S285,46,89,365" 
-            stroke-width="3" 
-            opacity="0.4" 
-            />
-            </svg>
-
-            <svg className='svg' height="400" version="1.1" width="470" xmlns="http://www.w3.org/2000/svg">
-            <path id="path2" fill="none" stroke="#eeeeee" d="M1037,287S285,46,89,365" 
-            stroke-width="3" 
-            opacity="0.4" 
-            />
-            </svg>
-
-            <svg className='svg' height="400" version="1.1" width="470" xmlns="http://www.w3.org/2000/svg">
-            <path id="path3" fill="none" stroke="#eeeeee" d="M1037,287S285,46,89,365" 
-            stroke-width="3" 
-            opacity="0.4" 
-            />
-            </svg>
-          
-            <svg className='svg' height="400" version="1.1" width="470" xmlns="http://www.w3.org/2000/svg">
-            <path id="path4" fill="none" stroke="#eeeeee" d="M1037,287S285,46,89,365" 
-            stroke-width="3" 
-            opacity="0.4" 
-            />
-            </svg>
+              
+            
             
 
             </div>
            <div className='wheel'>
-             <div id='ball1' className={ballClass}><img className='iconImg' src={iconArr[1]}/></div>
-             <div id="ball2" className={ballClass}><img className='iconImg' src={iconArr[2]}/></div>
-             <div id="ball3" className={ballClass}><img className='iconImg' src={iconArr[3]}/></div>
-             <div id="ball4" className={ballClass}><img className='iconImg' src={iconArr[4]}/></div>
-           </div>
-           
+               {Icons}
          </div>
-         
+         </div>
           </div>
 
 
           
     )
 };
-export default About
+export default About;
