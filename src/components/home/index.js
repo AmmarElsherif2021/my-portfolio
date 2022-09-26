@@ -37,7 +37,11 @@ const Home=()=>{
       <h2>Front End Developer / JavaScript </h2>
       
       <span>
-      <Link to="/contact" className="flat-button">
+      <Link to="/contact" className="flat-button" onClick={() => { 
+        setTimeout(() => {
+         window.location.reload();
+         }, 500)
+        }}>
         CONTACT ME
       </Link>
       </span>
@@ -45,7 +49,11 @@ const Home=()=>{
      
       </span>
       <span>
-      <Link to="/projects" className="flat-button">
+      <Link to="/projects" className="flat-button" onClick={() => { 
+        setTimeout(() => {
+         window.location.reload();
+         }, 500)
+        }}>
        Explore my projects 
       </Link>
       </span>

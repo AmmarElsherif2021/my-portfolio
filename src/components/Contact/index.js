@@ -2,6 +2,7 @@ import './index.scss'
 import AnimatedLetters from '../AnimatedLetter'
 import {useState,useEffect,useRef} from 'react'
 import emailjs from '@emailjs/browser'
+import Gif from './Gif/R.gif'
 const Contact=()=>{
     let contactStr='contact me';
     const contactArr=contactStr.split('');
@@ -70,6 +71,7 @@ const Contact=()=>{
              </form>
            </div>
           </div> 
+          <div className='gif-container'><img className='gif' src={Gif} alt="harry!!"/></div>
         </div>
         
     )
