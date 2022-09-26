@@ -10,6 +10,7 @@ import CIcon from './imgs/c.jpg'
 
 // import Loader from 'react-loaders'
 const About=()=>{
+  
     const [letterClass,setLetterClass]=useState('text-animate');
     let aboutStr='About me'
     const aboutArr=aboutStr.split('');

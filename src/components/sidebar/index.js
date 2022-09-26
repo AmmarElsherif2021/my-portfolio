@@ -1,5 +1,6 @@
 import './index.scss'
-import {Link, NavLink}from 'react-router-dom'
+import {Link, NavLink,useNavigate} from 'react-router-dom'
+import { useState,useEffect } from 'react'
 import LogoS from '../../assets/images/logo-s.png'
 //import LogoSubtitle from '../../assets/images/logo_sub.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
@@ -10,10 +11,33 @@ import {
   faTwitter,
   
 } from '@fortawesome/free-brands-svg-icons'
+
+
+// const OnCustomButtonAboutClick = () => {
+//   const navigate = useNavigate();
+//   navigate('/my-portfolio/about')
+  
+// }
+// const OnCustomButtonHomeClick = () => {
+//   const navigate = useNavigate();
+//   navigate('/my-portfolio/home')
+  
+// }
+// const OnCustomButtonContactsClick = () => {
+//   const navigate = useNavigate();
+//   navigate('/my-portfolio/contacts')
+  
+// }
+
+
 const Sidebar=()=>(
     <div className='nav-bar'>
-      <Link className='logo' to='/'>
-        <img src ={LogoS} alt="logo"/>
+      <Link className='logo' to='/' onClick={() => { 
+        setTimeout(() => {
+         window.location.reload();
+         }, 500)
+        }} >
+        <img src ={LogoS} alt="logo" />
         
       </Link>
       <nav>
@@ -21,6 +45,11 @@ const Sidebar=()=>(
          exact="true"
          activeclassname="active"
          to="/"
+         onClick={() => { 
+          setTimeout(() => {
+           window.location.reload();
+           }, 500)
+          }}
        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e"/>
        </NavLink>
@@ -28,17 +57,34 @@ const Sidebar=()=>(
          exact="true"
          activeclassname="active"
          className="about-link"
-         to="/about"
+         to="about"
+         onClick={() => { 
+           setTimeout(() => {
+            window.location.reload();
+            }, 500)
+           }}
        >
-          <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
+        
+         <FontAwesomeIcon icon={faUser} color="#4d4d4e"/>
+      
+          
+         
        </NavLink>
        <NavLink
          exact="true"
          activeclassname="active"
          className="contact-link"
-         to="/contact"
+         to="contact"
+         onClick={() => { 
+          setTimeout(() => {
+           window.location.reload();
+           }, 500)
+          }}
        >
-          <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
+        
+        <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e"/>
+      
+          
        </NavLink>
       </nav>
       <ul>

@@ -1,6 +1,6 @@
 
 import './App.scss'
-import {Route,Routes,Link} from 'react-router-dom'
+import {Route,Routes,Link,Switch} from 'react-router-dom'
 import Layout from './components/Layout'
 import Home from './components/home'
 import About from './components/About'
@@ -15,19 +15,20 @@ import Tenzies from './components/Projects/ReactProjects/Tenzie/index'
 function App() {
   return (
     
-    <Routes>
-      
+    
+      <Routes>
       <Route path="/"  element= { <Layout/> }>
-       <Route index element={<Home/>}/>
-       <Route path="/about"  element= { <About/> }></Route>
-       <Route path="/contact"  element= { <Contact/> }></Route>
-        
-       <Route path="/projects"  element= { <ProjectsPreview/> }></Route>
-       <Route path="/meme-gen"  element= { <MemeGen/> }> </Route>
-          <Route path="/note-app"  element= { <NoteApp/> }></Route>
-          <Route path="/tenzies"  element= { <Tenzies/> }></Route>
-      </Route>
-    </Routes>
+      <Route path="/"  forceRefersh={true} element={<Home/>}/>
+      <Route path="about"  element={<About/>} />
+      <Route path="contact" forceRefersh={true} element= { <Contact/> }/>
+       
+      <Route path="projects" forceRefersh={true} element= { <ProjectsPreview/> }/>
+      <Route path="meme-gen"  element= { <MemeGen/> }/>
+         <Route path="note-app"  element= { <NoteApp/> }/>
+         <Route path="tenzies"  element= { <Tenzies/> }/>
+     </Route>
+      </Routes>
+   
   
   );
 }
