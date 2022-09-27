@@ -1,7 +1,7 @@
 import './index.scss'
 import LogoA from './../../../assets/images/logo-s.png'
 import{motion} from "framer-motion"
-import { useEffect,useRef } from 'react'
+import { useEffect,useRef,useState } from 'react'
 const Logo=()=>{
   const transition = { duration: 4, yoyo: false, ease: "easeInOut" }
     const bgRef = useRef()
@@ -33,9 +33,16 @@ const Logo=()=>{
     //   )
       
     // }, [])
+    const[logoClass,setLogoClass]=useState('hidden-logo solid-logo')
+    useEffect(()=>{
+        
+        return setTimeout(() => {
+          setLogoClass("solid-logo")
+        }, 10000)
+    },[])
     return(
      <div className='logo-container' ref={bgRef}>
-       <img className='solid-logo' src={LogoA} alt='a' ref={solidLogoRef}/>
+       <img className={logoClass} src={LogoA} alt='a' ref={solidLogoRef}/>
        
        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" 
        width="610pt" height="610pt" viewBox="225 870 610 610"  xml="preserve">

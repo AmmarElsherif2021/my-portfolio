@@ -22,7 +22,9 @@
       stroke-width: 8px;
     }
   }
-
+  .hidden-logo{
+    opacity:0;
+  }
   .solid-logo {
     
     position: absolute;
@@ -37,10 +39,10 @@
     transform: rotateZ(30deg) !important;
     z-index: 1;
     
-         -webkit-animation:appear 15s ease-in 0s 1 normal;
-        -moz-animation:appear 15s ease-in 0s 1 normal;
-        -ms-animation:appear 15s ease-in 0s 1 normal;
-        animation:appear 15s ease-in 0s 1 normal;
+         -webkit-animation:appear 10s ease-in 5s 1 normal;
+        -moz-animation:appear 10s ease-in 5s 1 normal;
+        -ms-animation:appear 10s ease-in 5s 1 normal;
+        animation:appear 10s ease-in 5s 1 normal;
         @-webkit-keyframes appear {
           0%{ opacity: 0; -webkit-transform: scale3d(0.3, 0.3, 0.3); transform: scale3d(0.3, 0.3, 0.3); }
           60%{ opacity: 1; -webkit-transform: scale3d(1,1,1); transform: scale3d(1,1,1); }
