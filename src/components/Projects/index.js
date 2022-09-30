@@ -7,6 +7,7 @@ import MemeCvr from './cvrImgs/logo4.png'
 import NoteCvr from './cvrImgs/note.png'
 import TenziCvr from './cvrImgs/tenzie.png'
 import Loader from 'react-loaders'
+import Qntosh from "./Qntosh"
 const ProjectsPreview=()=>{
  
   
@@ -54,8 +55,9 @@ const ProjectsPreview=()=>{
     <section className="text-container">
       <h1>My React mini-projects </h1>
       <p>
-        here are some of mini projects I built using React hooks like useState and useEffect.
+      mini projects I've built using React hooks like useState and useEffect.
       </p>
+      
     </section>
     <section className="projects-container" onPointerOver={()=>this.handleOver()}>
     
