@@ -103,6 +103,8 @@ const About=()=>{
           // {<div 
           //   id={x.id} className={ballClass} ><img className='iconImg' src={x.src}/></div>}
           //initial={{ offsetDistance: "100%", scale: 2.5 }}
+          //{<h1>Important links</h1>
+          //<a href="https://www.javaguides.net/2020/07/understanding-react-app-folder-structure.html">understanding react app folder</a>}
     return(
     
         <div className='container about-page'>
@@ -119,8 +121,7 @@ const About=()=>{
             I'm a CS student looking forward my first job in tech field and perpetually working on
             improving my coding skills.
           </p>
-          <h1>Important links</h1>
-          <a href="https://www.javaguides.net/2020/07/understanding-react-app-folder-structure.html">understanding react app folder</a>
+          
            </div>
 
            <div className='wheel-container'>
