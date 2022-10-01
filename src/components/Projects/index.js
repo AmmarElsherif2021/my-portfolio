@@ -7,7 +7,7 @@ import MemeCvr from './cvrImgs/logo4.png'
 import NoteCvr from './cvrImgs/note.png'
 import TenziCvr from './cvrImgs/tenzie.png'
 import Loader from 'react-loaders'
-import Qntosh from "./Qntosh"
+
 const ProjectsPreview=()=>{
  
   
