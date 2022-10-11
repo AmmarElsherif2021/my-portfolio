@@ -65,7 +65,19 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^6.7.1",
     "gh-pages": "^4.0.0",
     "source-map-loader": "^4.0.0"
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AmmarElsherif2021/my-portfolio.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AmmarElsherif2021/my-portfolio/issues"
   }
 }

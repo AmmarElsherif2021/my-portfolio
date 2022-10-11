@@ -7,4 +7,12 @@
       height: 99%;
       overflow: hidden;
       border:10px rgb(255, 251, 3);
+      @media (max-width: 900px) {
+        width:75%;
+        height:80%;
+        top:10%;
+        left: 10%;
+
+        
+    }
 }

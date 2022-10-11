@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 import JsIcon from './imgs/jsIcon.png'
 import ReactIcon from './imgs/ReactIcon.png'
 import JavaIcon from './imgs/java.jpg'
-import CIcon from './imgs/c.jpg'
+import CIcon from './imgs/R.png'
 
 // import Loader from 'react-loaders'
 const About=()=>{

@@ -16,7 +16,7 @@
 // }
 @for $i from 1 through 55{
   .text-animate_#{$i}{
-    animation-delay: #{$i/10};
+    animation-delay: #{$i*5};
   }
 }
 .text-animate-hover {

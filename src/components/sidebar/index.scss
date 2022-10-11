@@ -1,7 +1,8 @@
 .nav-bar {
   background: #181818;
-  width: 60px;
-  height: 100%;
+  width: 10%;
+  max-width: 70px;
+  height: 100vh;
   position: absolute;
   top: 0;
   z-index: 3;
@@ -15,7 +16,7 @@
     img {
       display: block;
       margin: 8px auto;
-      width: 45px;
+      width: 80%;
       height: auto;
 
       &.sub-logo {
@@ -36,11 +37,11 @@
     font-size: 30px;
 
     a {
-      font-size: 22px;
+      font-size: 1.3rem;
       color: #4d4d4e;
       display: block;
       line-height: 51px;
-      height: 51px;
+      width: 90%;
       position: relative;
       text-decoration: none;
 

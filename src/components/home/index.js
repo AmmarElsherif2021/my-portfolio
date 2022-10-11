@@ -19,6 +19,17 @@ const Home=()=>{
         }, 4000)
       }, [])
       
+      const [logoClass,setLogoClass]= useState('logo'); 
+      // useEffect(() => {
+      //   return setTimeout(() => {
+      //       setLogoClass('logo')
+      //     }, 10000)
+      //   }, []) 
+      useEffect(() => {
+        return setTimeout(() => {
+            setLogoClass('logo logo-hidden')
+          }, 10000)
+        }, [])
     return (
     <div className=" home-page">
        <div className="text-zone" >
@@ -59,7 +70,7 @@ const Home=()=>{
       </span>
       
        </div>
-       <div className='logo'>
+       <div className={logoClass}>
          <Logo/>
        </div>
       

@@ -2,10 +2,11 @@
   width:100%;
     .text-zone {
       position: absolute;
-      left: 10%;
+      left: 40px;
       top: 50%;
       transform: translateY(-50%);
       width: 40%;
+      min-width: 360px;
       max-height: 90%;
     }
   
@@ -83,9 +84,28 @@
       }
       .logo{
         position:absolute;
-        width:100px;
-        right:10%;
-        top:7%;
-        background: rgb(14, 190, 7);
+        width:37%;
+        // right:10%;
+        top:8%;
+        left:0;
+        
+        
       }
+      @media screen and (max-width: 900px) {
+        
+        background:rgb(0, 0, 0);
+        width:90%;
+        height:100%;
+        left:80px;
+        margin:0;
+        }
+        .logo-hidden{
+          @media screen and (max-width: 900px) {
+          opacity:0;
+          }
+        }
+        // .hidden-init{
+        //   opacity: 0;
+        // }
+      
 }

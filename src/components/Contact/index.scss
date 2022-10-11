@@ -1,11 +1,12 @@
 .contact-page {
+  height:100%;
     .text-zone {
       position: absolute;
       left: 10%;
       top: 50%;
       transform: translateY(-50%);
       width: 40%;
-      max-height: 90%;
+      height: 90%;
     }
   
     h1 {
@@ -120,6 +121,9 @@
     padding: 20px;
     box-sizing: border-box;
     min-height: 150px;
+    @media (max-width: 900px) {
+      
+    }   
   }
 
   .flat-button {
@@ -147,8 +151,14 @@
     .gif-container{
       position:absolute;
       left:50%;
-      top:-5%;
+      top:9%;
       width:50%;
+      @media (max-width: 900px) {
+        top:11%;
+        left:55%;
+        width:40%;
+
+      }
       .gif{
         width:100%;
 
